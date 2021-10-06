@@ -1,2 +1,2 @@
 //Directory of Games
-GAMESDIR=C:\Users\realt\Desktop\Games\
+GAMESDIR=
