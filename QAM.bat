@@ -1,10 +1,9 @@
-Rem This is the main file
 @echo off
 setlocal EnableDelayedExpansion
 
 for /f "delims=" %%x in (config.txt) do (
-    set a=%%x
-    set beg=!a:~0,2!
+    set _a=%%x
+    set beg=!_a:~0,2!
 
     if not "!beg!"=="//" (
         set "%%x"
@@ -30,7 +29,6 @@ if %M%==2 GOTO EXITS
 
 :GAMES
 call gameslib.bat %GAMESDIR%
-pause
 goto EXITS
 
 :EXITS
