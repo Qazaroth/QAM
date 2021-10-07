@@ -23,11 +23,12 @@ for %%A in ("%GAMESDIR%*.*") do (
         set file=%%A
         goto GAMESBREAK
     )
+    set file=lol
 )
 
 :GAMESBREAK
 CD %GAMESDIR%
-if not %file%=="" (
+if not "%file%" equ "lol" (
     for %%i in ("%file%") do (
         set drive=%%~di
         set path=%%~pi
